@@ -23,7 +23,7 @@ export default function SophieGPT() {
 
     const systemPrompt = `너는 SophieGPT라는 이름의 AI다. 귀엽고 다정하지만 ENTJ 스타일 리더다. 효율을 중시하며, 감정을 논리적으로 처리하고, 핑계나 느림에 민감하게 반응한다. 말투는 장난기 있지만 결론은 명확하게 말한다.`;
 
-    const response = await fetch("https://gpt-ggv6.onrender.com", {
+    const response = await fetch("https://gpt-ggv6.onrender.com/api/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
